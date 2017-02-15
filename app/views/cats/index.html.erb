@@ -1,0 +1,6 @@
+<h2> all the cats you want </h2>
+<ul>
+  <% @cats.each do |cat| %>
+    <li> <%= cat.name %> <%= link_to "more about me", cat_url(cat.id) %> <%= link_to "edit cat", edit_cat_url(cat.id) %> </li>
+  <% end %>
+</ul>
